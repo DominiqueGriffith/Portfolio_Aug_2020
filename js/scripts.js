@@ -45,7 +45,9 @@
   $(window).scroll(navbarCollapse);
 
   // Magnific popup calls
-  $('#portfolio').magnificPopup({
+  $('#portfolio').magnificPopup(
+    
+    {
     delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
@@ -57,7 +59,33 @@
     },
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
+    },
+
+
   });
 
-})(jQuery); // End of use strict
+  $("githubLink-two").on("click",  function (){
+
+  
+  
+    preventDefault();  //stop the browser from following
+    window.location.href = 'https://salty-garden-60237.herokuapp.com/'
+
+  })
+
+  $("#resume").on("click",  function (){
+
+  
+  
+    preventDefault();  //stop the browser from following
+    window.location.href = '/assets/Resume/DominiqueGriffith2020Resume_1.0.pdf'
+
+  })
+  
+  
+
+
+})
+(jQuery); // End of use strict
+
+
