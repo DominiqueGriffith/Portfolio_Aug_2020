@@ -45,8 +45,9 @@
   $(window).scroll(navbarCollapse);
 
   // Magnific popup calls
-  $('#portfolio').magnificPopup(
+  $('.portfolioGallery').on("click",  function (){
     
+   magnificPopup(
     {
     delegate: 'a',
     type: 'image',
@@ -63,6 +64,8 @@
 
 
   });
+
+})
 
   $("githubLink-two").on("click",  function (){
 
